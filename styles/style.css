@@ -48,6 +48,10 @@
   color: #2f80ed;
 }
 
+.header__link:hover {
+  color: rgba(47, 128, 237, .5);
+}
+
 .header__main-illustration {
   height: 608px;
   width: 765px;
@@ -70,32 +74,28 @@
 }
 
 .logo {
+  width: 183px;
   margin: 0;
   z-index: 2;
-}
-
-.logo_place_header {
-  width: 183px;
-  height: 32px;
-  background-image: url("../images/logo_place_header.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+}
+
+.logo_place_header {
+  height: 32px;
+  background-image: url("../images/logo_place_header.svg");
   position: absolute;
   left: 64px;
   top: 30px;
 }
 
 .logo_place_footer {
-  width: 183px;
   height: 35px;
   background-image: url("../images/logo_place_footer.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  left:64px;
-  top: 60px;
+  align-self: flex-start;
+  justify-content: left;
 }
 
 .description {
@@ -104,7 +104,6 @@
 
 .two-columns {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 80%;
   margin: 0 auto;
@@ -184,9 +183,6 @@
   margin: 0 auto;
 }
 
-.table_theme_dark {
-}
-
 .table__cell {
   width: 250px;
   margin-top: 60px;
@@ -222,8 +218,12 @@
 }
 
 .feynman {
-  height: 890px;
+  min-height: 890px;
   position: relative;
+  background-color: #f2f2f2;
+  display:flex;
+  flex-direction: column;
+  padding-top: 100px;
 }
 
 .feynman__title {
@@ -233,6 +233,7 @@
   font-size: 120px;
   line-height: 1.15;
   text-align: center;
+  z-index: 1;
 }
 
 .feynman__subtitle {
@@ -241,6 +242,7 @@
   font-size: 36px;
   line-height: 51px;
   text-align: center;
+  z-index: 1;
 }
 
 .feynman__link {
@@ -253,6 +255,11 @@
   top: 50%;
   text-decoration: none;
   color: #2f80ed;
+  z-index: 1;
+}
+
+.feynman__link:hover {
+  color: rgba(47, 128, 237, .5);
 }
 
 .feynman__img {
@@ -263,9 +270,8 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  bottom: 0;
   left: 0;
-  z-index: -1;
+  bottom: 0;
 }
 
 .kaufman {
@@ -274,6 +280,8 @@
   padding: 90px 0;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .kaufman__triangle {
@@ -286,6 +294,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  z-index: 0;
 }
 
 .footer {
@@ -300,24 +309,14 @@
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
-  min-height: 350px;
-}
-
-.footer__column {
-
+  min-height: 250px;
 }
 
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
-}
-
-.footer__column_content_info {
-
-}
-
-.footer__column_content_social {
-
+  flex-direction:column;
+  justify-content: space-between;
 }
 
 .footer__column-heading {
@@ -345,7 +344,7 @@
   font-weight: normal;
   font-size: 18px;
   line-height: 25px;
-  align-self: end;
+
   margin: 18px 0;
 }
 
