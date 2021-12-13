@@ -4,5 +4,5 @@
 }
 
 .header__link:hover {
-  color: rgba(47, 128, 237, .5);
+  opacity: 0.5;
 }

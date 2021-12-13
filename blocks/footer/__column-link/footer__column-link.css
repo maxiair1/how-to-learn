@@ -5,3 +5,7 @@
   font-size: 18px;
   line-height: 30px;
 }
+
+.footer__column-link:hover {
+  opacity: 0.5;
+}

@@ -21,3 +21,7 @@
 .resources__logo:last-child {
   background-image: url("./resources-polka.svg");
 }
+
+.resources__logo:hover {
+  opacity: 0.5;
+}
